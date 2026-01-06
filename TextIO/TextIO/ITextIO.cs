@@ -10,5 +10,7 @@ namespace TextIO.TextIO
         string get();
         int getInt();
         int getIntInRange(int min, int max);
+        int chooseFromList(List<string> options, string message);
+
     }
 }

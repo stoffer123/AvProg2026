@@ -59,5 +59,15 @@ namespace TextIO.TextIO
                 }
             }
         }
+
+        public int chooseFromList(List<string> options, string message)
+        {
+               for (int i = 0; i < options.Count; i++)
+            {
+                put($"{i + 1}: {options[i]}");
+            }
+            int choice = getIntInRange(1, options.Count);
+            return choice - 1; // Return zero-based index
+        }
     }
 }
