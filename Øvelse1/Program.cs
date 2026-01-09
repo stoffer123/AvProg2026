@@ -6,6 +6,23 @@ public static class Program
 {
     public static void Main(string[] args)
     {
+        MedarbejderListeTest();
+        TestTimeStruct();
+
+    }
+
+    private static void TestTimeStruct()
+    {
+        Time t1, t2;
+        t1 = new Time("08:30:00");
+        t2 = t1;
+        t2.Hour = t2.Hour + 2;
+        Console.WriteLine(t1.ToString());
+        Console.WriteLine(t2.ToString());
+    }
+
+    private static void MedarbejderListeTest()
+    {
         MedarbejderListe<Adresse, IHarAdresse> medarbejderListe = new MedarbejderListe<Adresse, IHarAdresse>();
 
         Medarbejder medarbejder1 = new Mekaniker(
@@ -50,6 +67,5 @@ public static class Program
             By = "Somecity",
             Postnummer = "4321"
         }));
-
     }
 }
