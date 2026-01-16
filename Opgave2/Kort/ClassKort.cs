@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Opgave2
+namespace Opgave2.Kort
 {
-    internal struct Kort
+    internal class ClassKort : IKort
     {
         public EKulør Kulør { get; }
         public ERang Rang { get; }
 
-        public Kort(EKulør kulør, ERang rang)
+        public ClassKort(EKulør kulør, ERang rang)
         {
             Kulør = kulør;
             Rang = rang;
