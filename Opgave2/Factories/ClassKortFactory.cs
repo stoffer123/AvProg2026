@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Opgave2.Factories
 {
-    internal class ClassKortFactory
+    internal class ClassKortFactory : IKortFactory<ClassKort>
     {
         public ClassKort Create(EKulør kulør, ERang rang)
         {
