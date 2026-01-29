@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="Livelearning2_HashCodes/Livelearning2_HashCodes.csproj" Id="2e0398fa-9ea7-4b4e-ab6f-5b347bf17905" />
   <Project Path="MøbelProgram/MøbelProgram.csproj" Id="ec025b70-21f7-4742-8016-5581f272f119" />
   <Project Path="Opgave2/Opgave2.csproj" Id="da7c7769-71db-4a2f-82c9-3df88a0029f2" />
+  <Project Path="Opgave3/Opgave3.csproj" Id="f0a0bbd0-ad2d-45ff-be94-fa2ef0d34ccc" />
   <Project Path="Øvelse1/Øvelse1.csproj" Id="6cf9c4f9-3c28-42cf-8104-273f8d77eb4f" />
 </Solution>
