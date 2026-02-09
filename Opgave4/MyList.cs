@@ -26,7 +26,31 @@ namespace Opgave4
         }
         public void Remove(int number)
         {
-            //Ikke færdig
+            int index = -1;
+
+            for (int i = 0; i < Count; i++)
+            {
+                if (arr[i] == number)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if(index == -1)
+            {
+                return;
+            }
+
+            for (int i = index; i < Count - 1; i++)
+            {
+                arr[i] = arr[i + 1];
+            }
+
+            Count--;
+            arr[Count] = default;
+
+
         }
         public int this[int index]
         {
