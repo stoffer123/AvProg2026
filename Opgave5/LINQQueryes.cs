@@ -15,7 +15,9 @@ namespace Opgave5
 
         public List<int> GetEvenWithQueryMethods()
         {
-            return list.Where(x => x % 2 == 0).ToList();
+            return list
+                .Where(x => x % 2 == 0)
+                .ToList();
         }
 
         public List<int> GetEvenWithQueryExpressions()
