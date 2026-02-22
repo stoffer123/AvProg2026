@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+OtherShapes.Rhombus rhombus = new OtherShapes.Rhombus(5, 3);
