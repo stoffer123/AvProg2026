@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Opgave7.2_PeerToPeer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
