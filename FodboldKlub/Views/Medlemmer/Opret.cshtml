@@ -1,0 +1,36 @@
+﻿@model FodboldKlub.Models.Medlem
+
+<form asp-action="Opret" method="post">
+    <div>
+        <label asp-for="Fornavn"></label>
+        <input asp-for="Fornavn" />
+        <span asp-validation-for="Fornavn"></span>
+    </div>
+
+    <div>
+        <label asp-for="Efternavn"></label>
+        <input asp-for="Efternavn" />
+        <span asp-validation-for="Efternavn"></span>
+    </div>
+
+    <div>
+        <label asp-for="Adresse"></label>
+        <input asp-for="Adresse" />
+        <span asp-validation-for="Adresse"></span>
+    </div>
+
+    <div>
+        <label asp-for="Telefon"></label>
+        <input asp-for="Telefon" />
+        <span asp-validation-for="Telefon"></span>
+    </div>
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <button type="submit">Gem</button>
+
+</form>

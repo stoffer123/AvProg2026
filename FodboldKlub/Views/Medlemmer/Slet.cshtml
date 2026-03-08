@@ -1,0 +1,9 @@
+﻿@model FodboldKlub.Models.Medlem
+
+<p>Er du sikker på at du vil slette @Model.Fornavn @Model.Efternavn?</p>
+
+<form asp-action="Slet" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Ja, slet</button>
+    <a asp-action="Index">Annuller</a>
+</form>

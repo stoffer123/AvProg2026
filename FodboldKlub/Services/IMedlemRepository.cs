@@ -8,6 +8,6 @@ namespace FodboldKlub.Services
         Medlem? HentMedID(Guid id);
         void Tilføj(Medlem medlem);
         void Slet(Guid id);
-
+        void Opdater(Medlem medlem);
     }
 }

@@ -1,7 +1,12 @@
+using FodboldKlub.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Repositories
+builder.Services.AddSingleton<IMedlemRepository, MedlemRepository>();
 
 var app = builder.Build();
 
@@ -22,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Medlemmer}/{action=Index}/{id?}");
 
 app.Run();

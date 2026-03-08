@@ -1,0 +1,39 @@
+﻿@model IEnumerable<FodboldKlub.Models.Medlem>
+
+<a asp-action="Opret">Opret nyt medlem</a>
+
+<table>
+    <tr>
+        <th>
+            <a asp-action="Index" asp-route-sorterEfter="fornavn">Fornavn</a>    
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sorterEfter="efternavn">Efternavn</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sorterEfter="adresse">Adresse</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sorterEfter="telefon">Telefon</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sorterEfter="email">Email</a>
+        </th>
+    </tr>
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.Fornavn</td>
+            <td>@m.Efternavn</td>
+            <td>@m.Adresse</td>
+            <td>@m.Telefon</td>
+            <td>@m.Email</td>
+            <td>
+                <a asp-action="Rediger" asp-route-id="@m.Id">Rediger</a>
+            </td>
+            <td>
+                <a asp-action="Slet" asp-route-id="@m.Id">Slet</a>
+            </td>
+        </tr>
+    }
+</table>
